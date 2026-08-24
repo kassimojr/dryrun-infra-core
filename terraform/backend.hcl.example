@@ -1,0 +1,6 @@
+# Copie para backend.hcl e preencha com o account_id da sua conta:
+#   terraform init -backend-config=backend.hcl
+bucket         = "dryrun-terraform-state-<account_id>"
+region         = "us-east-1"
+dynamodb_table = "dryrun-terraform-lock"
+encrypt        = true
